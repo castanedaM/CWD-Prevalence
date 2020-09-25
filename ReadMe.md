@@ -1,2 +1,2 @@
-CWD Prevalence Project
+**CWD Prevalence** Project
 Date: 2020-09-25

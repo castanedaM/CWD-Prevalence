@@ -5,9 +5,9 @@
 
 # Extras ------------------------------------------------------------------
 
-readMe <- "ReadMe.txt"
+readMe <- "ReadMe.md"
 
-cat("CWD Prevalence Project", file = readMe, sep = "\n")
+cat("**CWD Prevalence** Project", file = readMe, sep = "\n")
 
 cat(paste0("Date: ", Sys.Date()), file = readMe, sep = "\n", append = TRUE)
 
