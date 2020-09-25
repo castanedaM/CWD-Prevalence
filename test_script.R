@@ -319,12 +319,25 @@ str(cwd_6)
 library(ggplot2)
 library(RColorBrewer)
 
+library(showtext)
+font_add("Arial", "arial.ttf")
+showtext_auto()
+
+## Loading Google fonts (https://fonts.google.com/)
+font_add_google(name = "Roboto", 
+                family = "Roboto")
+
+# font_add_google(name = "Arvo", 
+                # family = "Arvo")
+
+showtext_auto()
+
 theme_set(theme_classic() + theme(
   legend.key = element_rect(fill = "transparent", colour = "transparent"),
-  legend.title = element_text(size = 20, family = "Helvetica", face = "bold"),
-  legend.text = element_text(size = 20, family = "Helvetica"),
+  legend.title = element_text(size = 20, family = "Roboto", face = "bold"),
+  legend.text = element_text(size = 20, family = "Roboto"),
   
-  axis.title = element_text(size = 25, family = "Helvetica", face = "bold"),
+  axis.title = element_text(size = 25, family = "Roboto", face = "bold"),
   axis.text = element_text(size = 20),
   axis.line.x = element_line(colour = "black", size = 1, linetype = "solid"),
   panel.grid.major.x = element_blank(),
